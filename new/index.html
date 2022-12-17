@@ -6,32 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armstrong Securities, Inc.</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="./images/logo.jpg" alt="armstrong-logo">
-    <a href="index.html"><h1>Armstrong</h1><p>Securities, Inc.</p></a>
     <nav>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">OUR PEOPLE</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+<!----logo---->
+        <a href="index.html" class="logo">Armstrong Securities, Inc.</a> 
+<!----menu---->
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#" active>ABOUT US</a></li>
+            <li><a href="#" active>OUR TEAM</a></li>
+            <li><a href="#" active>CONTACT US</a></li>
+        </ul>
     </nav>
 
-<script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-300px";
-        }
-</script>
+
 </body>
 </html>
